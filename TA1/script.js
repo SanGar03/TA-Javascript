@@ -1,4 +1,4 @@
-function repetirString(texto, repeticiones) {
+function repeatString(texto, repeticiones) {
     let resultado = '';
     for (let i = 0; i < repeticiones; i++) {
         resultado += texto + '<br>';
@@ -9,7 +9,7 @@ function repetirString(texto, repeticiones) {
 function repetir() {
     const texto = document.getElementById('texto').value;
     const repeticiones = parseInt(document.getElementById('repeticiones').value);
-    const resultado = repetirString(texto, repeticiones);
+    const resultado = repeatString(texto, repeticiones);
     document.getElementById('resultado').innerHTML = resultado;
 }
 
