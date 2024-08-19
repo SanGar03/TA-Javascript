@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = en>
+
+    <head>
+        <title>
+            TA1
+        </title>
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>Ejercicio 1 de javascript </h1>
+        </header>
+        
+        <form>
+            <label for:"Get-Name">Palabra: </label>
+            <label for:"Get-Number"> Cantidad de repeticiones</label>
+            <input id="Get-Name" type=text name=" Palabra" />
+            <input id="Get-Number" type=text name=" Numero" />
+            <input id="guardar" type="submit" value="Save"/>
+            <input type="reset"/>
+        </form>
+        <script>
+            const texto = document.querySelector(Get-Name).name;
+const cantidad = document.querySelector(Get-Number).numero
+
+const guardar = document.querySelector(guardar)
+
+function repeatString(texto,rep){
+
+    while(rep>0){
+        
+        console.log(texto);
+        rep--;
+    }
+    }
+
+guardar.onClick = () => {
+    repeatString(texto,cantidad)
+  };
+
+        </script>
+    </body>
+</html>
