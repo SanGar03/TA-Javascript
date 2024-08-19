@@ -12,8 +12,6 @@ function bisiesto(year){
     return String(false);
 }
 
-
-
 function leapYears() {
     const year = parseInt(document.getElementById('year').value);
     const resultado = bisiesto(year);
