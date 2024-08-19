@@ -1,18 +1,14 @@
-
-const texto = document.querySelector(Get-Name).name;
-const cantidad = document.querySelector(Get-Number).numero
-
-const guardar = document.querySelector(guardar)
-
-function repeatString(texto,rep){
-
-    while(rep>0){
-        
-        console.log(texto);
-        rep--;
+function repeatString(texto, repeticiones) {
+    let resultado = '';
+    for (let i = 0; i < repeticiones; i++) {
+        resultado += texto + '<br>';
     }
-    }
+    return resultado;
+}
 
-guardar.onClick = () => {
-    repeatString(texto,cantidad)
-  };
+function ejecutarRepeticion() {
+    const texto = document.getElementById('texto').value;
+    const repeticiones = parseInt(document.getElementById('repeticiones').value);
+    const resultado = repeatString(texto, repeticiones);
+    document.getElementById('resultado').innerHTML = resultado;
+}
