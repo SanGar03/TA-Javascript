@@ -3,3 +3,5 @@ function invertir() {
     const resultado = texto.split('').reverse().join('');
     document.getElementById('resultado').innerHTML = resultado;
 }
+
+document.getElementById('botonInvertir').addEventListener('click',invertir)
